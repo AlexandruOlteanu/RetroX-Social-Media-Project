@@ -1,0 +1,1357 @@
+2023-10-10 10:44:40.083 EEST [6480] LOG:  database system was shut down at 2023-10-10 10:44:32 EEST
+2023-10-10 10:49:40.092 EEST [6240] LOG:  checkpoint starting: time
+2023-10-10 10:49:47.998 EEST [6240] LOG:  checkpoint complete: wrote 75 buffers (0.5%); 0 WAL file(s) added, 0 removed, 0 recycled; write=7.864 s, sync=0.035 s, total=7.907 s; sync files=32, longest=0.007 s, average=0.002 s; distance=406 kB, estimate=406 kB; lsn=0/15D4568, redo lsn=0/15D4530
+2023-10-10 10:54:12.649 EEST [6240] LOG:  checkpoint starting: immediate force wait
+2023-10-10 10:54:12.662 EEST [6240] LOG:  checkpoint complete: wrote 4 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.002 s, sync=0.004 s, total=0.013 s; sync files=4, longest=0.002 s, average=0.001 s; distance=4551 kB, estimate=4551 kB; lsn=0/1A46180, redo lsn=0/1A46148
+2023-10-10 10:59:12.675 EEST [6240] LOG:  checkpoint starting: time
+2023-10-10 11:00:58.523 EEST [6240] LOG:  checkpoint complete: wrote 973 buffers (5.9%); 1 WAL file(s) added, 0 removed, 0 recycled; write=105.574 s, sync=0.232 s, total=105.849 s; sync files=304, longest=0.007 s, average=0.001 s; distance=4565 kB, estimate=4565 kB; lsn=0/1EBB830, redo lsn=0/1EBB7F8
+2023-10-10 11:09:16.270 EEST [9624] ERROR:  malformed array literal: "Olteanu" at character 91
+2023-10-10 11:09:16.270 EEST [9624] DETAIL:  Array value must start with "{" or dimension information.
+2023-10-10 11:09:16.270 EEST [9624] STATEMENT:  INSERT INTO public."USER"(
+		"NAME", "SURNAME", "USERNAME", "AGE", "DESCRIPTION")
+		VALUES ('Olteanu', 'Alexandru', 'alexadruo13', 22, null);
+2023-10-10 11:09:46.442 EEST [9624] ERROR:  column "Olteanu" does not exist at character 91
+2023-10-10 11:09:46.442 EEST [9624] STATEMENT:  INSERT INTO public."USER"(
+		"NAME", "SURNAME", "USERNAME", "AGE", "DESCRIPTION")
+		VALUES ("Olteanu", "Alexandru", "alexadruo13", 22, null);
+2023-10-10 11:10:23.817 EEST [9624] ERROR:  column "Alexandru" does not exist at character 102
+2023-10-10 11:10:23.817 EEST [9624] STATEMENT:  INSERT INTO public."USER"(
+		"NAME", "SURNAME", "USERNAME", "AGE", "DESCRIPTION")
+		VALUES ('Olteanu', "Alexandru", "alexadruo13", 22, null);
+2023-10-10 11:10:37.809 EEST [9624] ERROR:  malformed array literal: "Olteanu" at character 91
+2023-10-10 11:10:37.809 EEST [9624] DETAIL:  Array value must start with "{" or dimension information.
+2023-10-10 11:10:37.809 EEST [9624] STATEMENT:  INSERT INTO public."USER"(
+		"NAME", "SURNAME", "USERNAME", "AGE", "DESCRIPTION")
+		VALUES ('Olteanu', 'Alexandru', 'alexadruo13', 22, null);
+2023-10-10 11:14:12.563 EEST [6240] LOG:  checkpoint starting: time
+2023-10-10 11:14:13.132 EEST [6240] LOG:  checkpoint complete: wrote 6 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.543 s, sync=0.012 s, total=0.569 s; sync files=5, longest=0.007 s, average=0.003 s; distance=0 kB, estimate=4109 kB; lsn=0/1EBBAB0, redo lsn=0/1EBBA78
+2023-10-10 11:19:12.144 EEST [6240] LOG:  checkpoint starting: time
+2023-10-10 11:19:16.022 EEST [6240] LOG:  checkpoint complete: wrote 36 buffers (0.2%); 0 WAL file(s) added, 0 removed, 0 recycled; write=3.834 s, sync=0.031 s, total=3.879 s; sync files=29, longest=0.007 s, average=0.002 s; distance=173 kB, estimate=3715 kB; lsn=0/1EE6EB0, redo lsn=0/1EE6E78
+2023-10-10 11:31:05.575 EEST [8364] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:31:05.575 EEST [8364] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:31:07.140 EEST [13872] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:31:07.140 EEST [13872] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:31:07.978 EEST [12264] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:31:07.978 EEST [12264] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:31:09.147 EEST [20024] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:31:09.147 EEST [20024] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:31:11.151 EEST [4328] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:31:11.151 EEST [4328] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:31:12.977 EEST [25320] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:31:12.977 EEST [25320] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:31:13.150 EEST [8368] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:31:13.150 EEST [8368] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:31:15.141 EEST [7084] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:31:15.141 EEST [7084] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:31:17.151 EEST [13256] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:31:17.151 EEST [13256] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:31:17.975 EEST [17544] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:31:17.975 EEST [17544] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:31:19.157 EEST [18624] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:31:19.157 EEST [18624] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:31:21.148 EEST [16940] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:31:21.148 EEST [16940] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:31:22.979 EEST [5332] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:31:22.979 EEST [5332] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:31:23.148 EEST [23224] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:31:23.148 EEST [23224] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:31:25.140 EEST [26692] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:31:25.140 EEST [26692] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:31:27.146 EEST [7736] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:31:27.146 EEST [7736] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:31:27.972 EEST [22860] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:31:27.972 EEST [22860] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:31:29.154 EEST [21988] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:31:29.154 EEST [21988] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:31:31.158 EEST [9796] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:31:31.158 EEST [9796] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:31:32.976 EEST [19080] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:31:32.976 EEST [19080] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:31:33.147 EEST [196] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:31:33.147 EEST [196] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:31:35.150 EEST [14384] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:31:35.150 EEST [14384] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:31:37.142 EEST [11552] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:31:37.142 EEST [11552] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:31:37.981 EEST [21888] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:31:37.981 EEST [21888] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:31:39.150 EEST [2976] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:31:39.150 EEST [2976] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:31:41.144 EEST [7420] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:31:41.144 EEST [7420] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:31:42.980 EEST [24040] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:31:42.980 EEST [24040] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:31:43.153 EEST [28276] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:31:43.153 EEST [28276] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:31:45.148 EEST [12380] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:31:45.148 EEST [12380] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:31:47.155 EEST [13428] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:31:47.155 EEST [13428] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:31:47.979 EEST [11408] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:31:47.979 EEST [11408] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:31:49.145 EEST [2948] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:31:49.145 EEST [2948] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:31:51.154 EEST [12924] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:31:51.154 EEST [12924] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:31:52.975 EEST [25796] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:31:52.975 EEST [25796] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:31:53.147 EEST [21832] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:31:53.147 EEST [21832] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:31:55.152 EEST [12896] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:31:55.152 EEST [12896] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:31:57.155 EEST [5460] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:31:57.155 EEST [5460] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:31:57.980 EEST [14732] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:31:57.980 EEST [14732] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:31:59.145 EEST [19908] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:31:59.145 EEST [19908] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:32:01.151 EEST [3784] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:32:01.151 EEST [3784] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:32:02.972 EEST [6292] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:32:02.972 EEST [6292] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:32:03.142 EEST [28176] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:32:03.142 EEST [28176] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:32:05.150 EEST [20252] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:32:05.150 EEST [20252] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:32:07.151 EEST [23796] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:32:07.151 EEST [23796] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:32:07.976 EEST [26880] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:32:07.976 EEST [26880] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:32:09.145 EEST [4484] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:32:09.145 EEST [4484] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:32:11.154 EEST [4696] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:32:11.154 EEST [4696] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:32:12.973 EEST [6420] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:32:12.973 EEST [6420] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:32:13.143 EEST [12212] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:32:13.143 EEST [12212] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:32:15.149 EEST [8652] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:32:15.149 EEST [8652] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:32:17.160 EEST [19872] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:32:17.160 EEST [19872] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:32:17.980 EEST [12056] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:32:17.980 EEST [12056] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:32:19.147 EEST [5952] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:32:19.147 EEST [5952] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:32:21.153 EEST [24088] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:32:21.153 EEST [24088] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:32:22.971 EEST [16784] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:32:22.971 EEST [16784] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:32:23.143 EEST [17756] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:32:23.143 EEST [17756] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:32:25.257 EEST [15640] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:32:25.257 EEST [15640] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:32:27.150 EEST [5948] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:32:27.150 EEST [5948] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:32:27.974 EEST [21764] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:32:27.974 EEST [21764] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:32:29.152 EEST [16568] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:32:29.152 EEST [16568] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:32:31.153 EEST [26072] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:32:31.153 EEST [26072] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:32:32.978 EEST [7972] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:32:32.978 EEST [7972] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:32:33.153 EEST [23276] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:32:33.153 EEST [23276] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:32:35.151 EEST [26724] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:32:35.151 EEST [26724] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:32:37.151 EEST [9436] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:32:37.151 EEST [9436] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:32:37.977 EEST [14420] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:32:37.977 EEST [14420] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:32:39.143 EEST [10376] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:32:39.143 EEST [10376] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:32:41.144 EEST [12968] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:32:41.144 EEST [12968] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:32:42.980 EEST [10808] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:32:42.980 EEST [10808] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:32:43.150 EEST [22336] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:32:43.150 EEST [22336] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:32:45.148 EEST [8644] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:32:45.148 EEST [8644] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:32:47.148 EEST [24416] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:32:47.148 EEST [24416] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:32:47.970 EEST [1184] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:32:47.970 EEST [1184] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:32:49.260 EEST [22608] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:32:49.260 EEST [22608] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:32:51.153 EEST [11820] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:32:51.153 EEST [11820] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:32:52.971 EEST [21564] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:32:52.971 EEST [21564] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:32:53.141 EEST [17256] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:32:53.141 EEST [17256] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:32:55.146 EEST [12172] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:32:55.146 EEST [12172] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:32:57.260 EEST [20604] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:32:57.260 EEST [20604] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:32:57.982 EEST [17604] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:32:57.982 EEST [17604] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:32:59.145 EEST [22764] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:32:59.145 EEST [22764] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:33:01.154 EEST [25988] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:33:01.154 EEST [25988] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:33:02.975 EEST [14872] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:33:02.975 EEST [14872] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:33:03.150 EEST [28216] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:33:03.150 EEST [28216] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:33:05.152 EEST [15868] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:33:05.152 EEST [15868] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:33:07.144 EEST [19816] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:33:07.144 EEST [19816] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:33:07.984 EEST [26704] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:33:07.984 EEST [26704] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:33:09.149 EEST [16084] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:33:09.149 EEST [16084] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:33:11.144 EEST [17880] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:33:11.144 EEST [17880] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:33:12.981 EEST [19744] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:33:12.981 EEST [19744] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:33:13.150 EEST [8592] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:33:13.150 EEST [8592] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:33:15.154 EEST [25216] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:33:15.154 EEST [25216] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:33:17.154 EEST [13780] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:33:17.154 EEST [13780] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:33:17.980 EEST [22812] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:33:17.980 EEST [22812] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:33:19.148 EEST [27196] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:33:19.148 EEST [27196] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:33:21.147 EEST [9652] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:33:21.147 EEST [9652] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:33:23.086 EEST [12060] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:33:23.086 EEST [12060] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:33:23.142 EEST [18296] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:33:23.142 EEST [18296] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:33:25.256 EEST [28060] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:33:25.256 EEST [28060] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:33:27.152 EEST [27396] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:33:27.152 EEST [27396] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:33:27.976 EEST [25696] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:33:27.976 EEST [25696] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:33:29.154 EEST [13592] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:33:29.154 EEST [13592] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:33:31.146 EEST [8348] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:33:31.146 EEST [8348] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:33:32.978 EEST [14440] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:33:32.978 EEST [14440] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:33:33.153 EEST [19924] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:33:33.153 EEST [19924] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:33:35.142 EEST [18852] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:33:35.142 EEST [18852] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:33:37.153 EEST [24480] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:33:37.153 EEST [24480] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:33:37.975 EEST [1756] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:33:37.975 EEST [1756] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:33:39.153 EEST [20244] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:33:39.153 EEST [20244] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:33:41.156 EEST [8456] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:33:41.156 EEST [8456] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:33:43.079 EEST [888] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:33:43.079 EEST [888] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:33:43.146 EEST [23588] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:33:43.146 EEST [23588] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:33:45.149 EEST [27928] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:33:45.149 EEST [27928] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:33:47.153 EEST [27520] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:33:47.153 EEST [27520] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:33:47.978 EEST [25532] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:33:47.978 EEST [25532] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:33:49.147 EEST [5956] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:33:49.147 EEST [5956] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:33:51.147 EEST [19612] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:33:51.147 EEST [19612] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:33:52.969 EEST [23056] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:33:52.969 EEST [23056] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:33:53.158 EEST [27160] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:33:53.158 EEST [27160] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:33:55.156 EEST [27044] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:33:55.156 EEST [27044] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:33:57.143 EEST [7144] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:33:57.143 EEST [7144] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:33:57.977 EEST [5572] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:33:57.977 EEST [5572] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:33:59.143 EEST [1556] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:33:59.143 EEST [1556] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:34:01.158 EEST [2120] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:34:01.158 EEST [2120] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:34:02.982 EEST [13736] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:34:02.982 EEST [13736] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:34:03.152 EEST [7528] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:34:03.152 EEST [7528] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:34:05.152 EEST [2508] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:34:05.152 EEST [2508] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:34:07.157 EEST [22256] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:34:07.157 EEST [22256] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:34:07.972 EEST [1148] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:34:07.972 EEST [1148] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:34:09.149 EEST [3744] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:34:09.149 EEST [3744] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:34:11.149 EEST [15960] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:34:11.149 EEST [15960] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:34:12.975 EEST [9048] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:34:12.975 EEST [9048] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:34:13.144 EEST [4152] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:34:13.144 EEST [4152] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:34:15.148 EEST [9516] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:34:15.148 EEST [9516] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:34:17.151 EEST [17416] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:34:17.151 EEST [17416] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:34:17.976 EEST [11876] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:34:17.976 EEST [11876] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:34:19.159 EEST [13100] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:34:19.159 EEST [13100] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:34:21.148 EEST [13244] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:34:21.148 EEST [13244] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:34:22.980 EEST [9296] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:34:22.980 EEST [9296] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:34:23.150 EEST [14288] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:34:23.150 EEST [14288] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:34:25.158 EEST [11852] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:34:25.158 EEST [11852] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:34:27.151 EEST [17904] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:34:27.151 EEST [17904] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:34:27.968 EEST [23304] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:34:27.968 EEST [23304] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:34:29.154 EEST [5464] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:34:29.154 EEST [5464] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:34:31.143 EEST [18016] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:34:31.143 EEST [18016] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:34:32.977 EEST [25036] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:34:32.977 EEST [25036] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:34:33.151 EEST [8312] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:34:33.151 EEST [8312] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:34:35.143 EEST [14796] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:34:35.143 EEST [14796] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:34:37.146 EEST [9932] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:34:37.146 EEST [9932] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:34:37.983 EEST [10084] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:34:37.983 EEST [10084] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:34:39.152 EEST [24736] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:34:39.152 EEST [24736] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:34:41.158 EEST [18932] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:34:41.158 EEST [18932] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:34:42.976 EEST [21640] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:34:42.976 EEST [21640] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:34:43.148 EEST [26216] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:34:43.148 EEST [26216] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:34:45.151 EEST [6336] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:34:45.151 EEST [6336] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:34:47.155 EEST [27416] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:34:47.155 EEST [27416] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:34:47.975 EEST [12964] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:34:47.975 EEST [12964] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:34:49.144 EEST [23356] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:34:49.144 EEST [23356] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:34:51.149 EEST [17404] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:34:51.149 EEST [17404] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:34:53.077 EEST [23244] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:34:53.077 EEST [23244] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:34:53.157 EEST [27540] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:34:53.157 EEST [27540] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:34:55.266 EEST [16020] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:34:55.266 EEST [16020] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:34:57.151 EEST [28080] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:34:57.151 EEST [28080] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:34:57.973 EEST [24888] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:34:57.973 EEST [24888] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:34:59.152 EEST [16348] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:34:59.152 EEST [16348] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:35:01.142 EEST [812] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:35:01.142 EEST [812] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:35:02.977 EEST [1192] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:35:02.977 EEST [1192] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:35:03.253 EEST [12880] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:35:03.253 EEST [12880] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:35:05.149 EEST [17372] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:35:05.149 EEST [17372] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:35:07.154 EEST [19240] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:35:07.154 EEST [19240] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:35:07.980 EEST [28572] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:35:07.980 EEST [28572] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:35:09.154 EEST [196] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:35:09.154 EEST [196] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:35:11.153 EEST [14384] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:35:11.153 EEST [14384] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:35:12.983 EEST [24268] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:35:12.983 EEST [24268] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:35:13.154 EEST [22400] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:35:13.154 EEST [22400] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:35:15.255 EEST [14612] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:35:15.255 EEST [14612] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:35:17.155 EEST [27628] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:35:17.155 EEST [27628] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:35:17.979 EEST [26368] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:35:17.979 EEST [26368] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:35:19.145 EEST [27876] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:35:19.145 EEST [27876] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:35:21.261 EEST [11624] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:35:21.261 EEST [11624] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:35:22.978 EEST [5596] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:35:22.978 EEST [5596] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:35:23.149 EEST [1732] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:35:23.149 EEST [1732] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:35:25.145 EEST [26700] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:35:25.145 EEST [26700] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:35:27.160 EEST [26884] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:35:27.160 EEST [26884] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:35:27.984 EEST [12240] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:35:27.984 EEST [12240] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:35:29.264 EEST [10848] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:35:29.264 EEST [10848] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:35:31.150 EEST [19968] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:35:31.150 EEST [19968] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:35:32.983 EEST [13624] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:35:32.983 EEST [13624] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:35:33.151 EEST [7804] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:35:33.151 EEST [7804] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:35:35.147 EEST [12908] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:35:35.147 EEST [12908] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:35:37.151 EEST [27168] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:35:37.151 EEST [27168] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:35:37.974 EEST [24780] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:35:37.974 EEST [24780] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:35:39.156 EEST [18492] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:35:39.156 EEST [18492] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:35:41.262 EEST [6420] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:35:41.262 EEST [6420] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:35:42.976 EEST [6092] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:35:42.976 EEST [6092] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:35:43.255 EEST [16888] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:35:43.255 EEST [16888] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:35:45.153 EEST [11928] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:35:45.153 EEST [11928] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:35:47.153 EEST [9276] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:35:47.153 EEST [9276] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:35:47.980 EEST [7012] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:35:47.980 EEST [7012] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:35:49.151 EEST [22972] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:35:49.151 EEST [22972] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:35:51.144 EEST [5296] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:35:51.144 EEST [5296] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:35:52.983 EEST [19728] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:35:52.983 EEST [19728] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:35:53.156 EEST [4436] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:35:53.156 EEST [4436] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:35:55.156 EEST [25424] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:35:55.156 EEST [25424] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:35:57.153 EEST [7716] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:35:57.153 EEST [7716] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:35:57.984 EEST [17756] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:35:57.984 EEST [17756] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:35:59.146 EEST [2368] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:35:59.146 EEST [2368] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:36:01.157 EEST [28028] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:36:01.157 EEST [28028] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:36:02.973 EEST [20216] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:36:02.973 EEST [20216] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:36:03.148 EEST [11572] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:36:03.148 EEST [11572] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:36:05.158 EEST [21024] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:36:05.158 EEST [21024] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:36:07.149 EEST [11268] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:36:07.149 EEST [11268] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:36:07.970 EEST [22800] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:36:07.970 EEST [22800] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:36:09.150 EEST [20116] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:36:09.150 EEST [20116] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:36:11.153 EEST [10092] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:36:11.153 EEST [10092] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:36:12.985 EEST [22504] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:36:12.985 EEST [22504] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:36:13.156 EEST [21188] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:36:13.156 EEST [21188] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:36:15.159 EEST [12968] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:36:15.159 EEST [12968] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:36:17.155 EEST [17112] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:36:17.155 EEST [17112] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:36:17.981 EEST [3756] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:36:17.981 EEST [3756] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:36:19.146 EEST [648] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:36:19.146 EEST [648] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:36:21.152 EEST [6188] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:36:21.152 EEST [6188] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:36:22.970 EEST [21000] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:36:22.970 EEST [21000] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:36:23.156 EEST [27276] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:36:23.156 EEST [27276] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:36:25.155 EEST [18424] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:36:25.155 EEST [18424] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:36:27.158 EEST [10696] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:36:27.158 EEST [10696] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:36:27.971 EEST [11420] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:36:27.971 EEST [11420] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:36:29.144 EEST [13488] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:36:29.144 EEST [13488] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:36:31.151 EEST [6524] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:36:31.151 EEST [6524] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:36:32.982 EEST [27204] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:36:32.982 EEST [27204] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:36:33.153 EEST [22412] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:36:33.153 EEST [22412] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:36:35.154 EEST [27988] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:36:35.154 EEST [27988] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:36:37.155 EEST [11772] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:36:37.155 EEST [11772] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:36:37.983 EEST [25648] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:36:37.983 EEST [25648] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:36:39.145 EEST [20904] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:36:39.145 EEST [20904] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:36:41.146 EEST [10976] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:36:41.146 EEST [10976] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:36:42.978 EEST [23196] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:36:42.978 EEST [23196] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:36:43.149 EEST [23864] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:36:43.149 EEST [23864] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:36:45.156 EEST [9492] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:36:45.156 EEST [9492] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:36:47.144 EEST [21672] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:36:47.144 EEST [21672] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:36:47.973 EEST [27372] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:36:47.973 EEST [27372] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:36:49.262 EEST [13052] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:36:49.262 EEST [13052] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:36:51.148 EEST [15888] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:36:51.148 EEST [15888] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:36:52.979 EEST [9312] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:36:52.979 EEST [9312] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:36:53.258 EEST [22424] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:36:53.258 EEST [22424] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:36:55.154 EEST [18764] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:36:55.154 EEST [18764] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:36:57.150 EEST [3076] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:36:57.150 EEST [3076] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:36:57.981 EEST [7864] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:36:57.981 EEST [7864] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:36:59.157 EEST [14568] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:36:59.157 EEST [14568] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:37:01.257 EEST [10888] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:37:01.257 EEST [10888] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:37:02.983 EEST [28512] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:37:02.983 EEST [28512] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:37:03.154 EEST [20896] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:37:03.154 EEST [20896] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:37:05.146 EEST [27848] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:37:05.146 EEST [27848] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:37:07.151 EEST [22236] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:37:07.151 EEST [22236] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:37:08.083 EEST [15256] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:37:08.083 EEST [15256] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:37:09.151 EEST [14628] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:37:09.151 EEST [14628] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:37:11.152 EEST [18204] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:37:11.152 EEST [18204] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:37:12.984 EEST [2308] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:37:12.984 EEST [2308] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:37:13.155 EEST [23584] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:37:13.155 EEST [23584] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:37:15.146 EEST [15792] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:37:15.146 EEST [15792] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:37:17.146 EEST [19076] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:37:17.146 EEST [19076] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:37:17.984 EEST [23564] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:37:17.984 EEST [23564] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:37:19.152 EEST [25432] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:37:19.152 EEST [25432] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:37:21.157 EEST [13468] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:37:21.157 EEST [13468] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:37:22.976 EEST [5640] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:37:22.976 EEST [5640] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:37:23.147 EEST [25280] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:37:23.147 EEST [25280] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:37:25.147 EEST [7160] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:37:25.147 EEST [7160] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:37:27.258 EEST [6436] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:37:27.258 EEST [6436] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:37:27.973 EEST [21524] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:37:27.973 EEST [21524] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:37:29.153 EEST [28360] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:37:29.153 EEST [28360] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:37:31.160 EEST [23888] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:37:31.160 EEST [23888] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:37:32.978 EEST [12164] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:37:32.978 EEST [12164] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:37:33.148 EEST [22524] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:37:33.148 EEST [22524] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:37:35.156 EEST [5916] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:37:35.156 EEST [5916] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:37:37.147 EEST [6120] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:37:37.147 EEST [6120] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:37:37.983 EEST [4836] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:37:37.983 EEST [4836] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:37:39.151 EEST [1120] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:37:39.151 EEST [1120] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:37:41.159 EEST [9364] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:37:41.159 EEST [9364] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:37:42.977 EEST [580] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:37:42.977 EEST [580] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:37:43.149 EEST [14812] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:37:43.149 EEST [14812] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:37:45.156 EEST [1148] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:37:45.156 EEST [1148] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:37:47.158 EEST [26540] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:37:47.158 EEST [26540] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:37:47.981 EEST [12156] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:37:47.981 EEST [12156] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:37:49.151 EEST [23348] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:37:49.151 EEST [23348] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:37:51.154 EEST [12384] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:37:51.154 EEST [12384] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:37:52.984 EEST [12836] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:37:52.984 EEST [12836] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:37:53.153 EEST [3136] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:37:53.153 EEST [3136] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:37:55.155 EEST [19672] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:37:55.155 EEST [19672] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:37:57.155 EEST [14268] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:37:57.155 EEST [14268] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:37:57.982 EEST [27528] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:37:57.982 EEST [27528] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:37:59.149 EEST [20856] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:37:59.149 EEST [20856] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:38:01.155 EEST [25580] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:38:01.155 EEST [25580] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:38:02.981 EEST [25000] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:38:02.981 EEST [25000] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:38:03.152 EEST [15492] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:38:03.152 EEST [15492] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:38:05.158 EEST [10580] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:38:05.158 EEST [10580] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:38:07.147 EEST [24180] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:38:07.147 EEST [24180] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:38:07.983 EEST [7868] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:38:07.983 EEST [7868] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:38:09.151 EEST [21376] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:38:09.151 EEST [21376] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:38:11.151 EEST [2612] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:38:11.151 EEST [2612] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:38:12.971 EEST [6512] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:38:12.971 EEST [6512] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:38:13.157 EEST [9812] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:38:13.157 EEST [9812] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:38:15.160 EEST [9876] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:38:15.160 EEST [9876] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:38:17.259 EEST [25116] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:38:17.259 EEST [25116] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:38:17.974 EEST [12984] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:38:17.974 EEST [12984] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:38:19.155 EEST [16512] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:38:19.155 EEST [16512] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:38:21.161 EEST [21076] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:38:21.161 EEST [21076] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:38:22.975 EEST [12588] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:38:22.975 EEST [12588] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:38:23.148 EEST [14944] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:38:23.148 EEST [14944] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:38:25.151 EEST [5864] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:38:25.151 EEST [5864] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:38:27.255 EEST [23700] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:38:27.255 EEST [23700] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:38:27.984 EEST [25784] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:38:27.984 EEST [25784] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:38:29.146 EEST [2172] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:38:29.146 EEST [2172] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:38:31.154 EEST [28180] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:38:31.154 EEST [28180] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:38:32.976 EEST [23760] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:38:32.976 EEST [23760] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:38:33.148 EEST [17544] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:38:33.148 EEST [17544] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:38:35.158 EEST [2720] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:38:35.158 EEST [2720] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:38:37.154 EEST [6480] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:38:37.154 EEST [6480] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:38:37.979 EEST [26616] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:38:37.979 EEST [26616] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:38:39.158 EEST [23548] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:38:39.158 EEST [23548] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:38:41.269 EEST [22100] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:38:41.269 EEST [22100] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:38:42.980 EEST [7736] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:38:42.980 EEST [7736] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:38:43.152 EEST [27048] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:38:43.152 EEST [27048] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:38:45.160 EEST [2696] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:38:45.160 EEST [2696] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:38:47.158 EEST [22140] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:38:47.158 EEST [22140] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:38:47.984 EEST [23856] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:38:47.984 EEST [23856] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:38:49.151 EEST [19240] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:38:49.151 EEST [19240] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:38:51.156 EEST [28572] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:38:51.156 EEST [28572] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:38:52.981 EEST [19260] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:38:52.981 EEST [19260] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:38:53.151 EEST [23868] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:38:53.151 EEST [23868] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:38:55.147 EEST [23372] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:38:55.147 EEST [23372] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:38:57.155 EEST [26784] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:38:57.155 EEST [26784] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:38:57.983 EEST [27876] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:38:57.983 EEST [27876] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:38:59.148 EEST [396] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:38:59.148 EEST [396] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:39:01.157 EEST [13796] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:39:01.157 EEST [13796] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:39:02.972 EEST [25464] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:39:02.972 EEST [25464] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:39:03.157 EEST [7104] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:39:03.157 EEST [7104] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:39:05.149 EEST [28164] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:39:05.149 EEST [28164] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:39:07.038 EEST [22988] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:39:07.038 EEST [22988] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:39:07.147 EEST [13992] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:39:07.147 EEST [13992] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:39:07.971 EEST [4036] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:39:07.971 EEST [4036] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:39:09.146 EEST [5924] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:39:09.146 EEST [5924] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:39:11.152 EEST [24148] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:39:11.152 EEST [24148] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:39:12.976 EEST [11796] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:39:12.976 EEST [11796] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:39:13.145 EEST [15980] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:39:13.145 EEST [15980] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:39:15.148 EEST [4484] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:39:15.148 EEST [4484] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:39:17.154 EEST [24780] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:39:17.154 EEST [24780] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:39:17.983 EEST [23608] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:39:17.983 EEST [23608] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:39:19.148 EEST [24796] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:39:19.148 EEST [24796] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:39:19.306 EEST [9720] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:39:19.306 EEST [9720] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:39:21.155 EEST [7432] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:39:21.155 EEST [7432] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:39:22.975 EEST [16180] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:39:22.975 EEST [16180] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:39:23.145 EEST [28236] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:39:23.145 EEST [28236] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:39:25.144 EEST [7188] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:39:25.144 EEST [7188] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:39:27.160 EEST [22972] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:39:27.160 EEST [22972] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:39:27.985 EEST [24216] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:39:27.985 EEST [24216] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:39:29.145 EEST [5656] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:39:29.145 EEST [5656] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:39:31.155 EEST [11464] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:39:31.155 EEST [11464] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:39:31.252 EEST [8488] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:39:31.252 EEST [8488] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:39:32.974 EEST [21944] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:39:32.974 EEST [21944] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:39:33.145 EEST [27900] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:39:33.145 EEST [27900] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:39:35.145 EEST [5160] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:39:35.145 EEST [5160] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:39:37.149 EEST [15864] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:39:37.149 EEST [15864] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:39:37.973 EEST [3732] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:39:37.973 EEST [3732] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:39:39.150 EEST [10000] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:39:39.150 EEST [10000] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:39:41.159 EEST [3008] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:39:41.159 EEST [3008] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:39:41.171 EEST [27480] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:39:41.171 EEST [27480] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:39:42.983 EEST [26908] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:39:42.983 EEST [26908] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:39:43.247 EEST [19952] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:39:43.247 EEST [19952] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:39:45.145 EEST [21560] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:39:45.145 EEST [21560] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:39:47.153 EEST [6860] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:39:47.153 EEST [6860] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:39:47.976 EEST [7992] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:39:47.976 EEST [7992] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:39:49.261 EEST [13548] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:39:49.261 EEST [13548] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:39:51.159 EEST [7136] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:39:51.159 EEST [7136] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:39:52.985 EEST [18720] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:39:52.985 EEST [18720] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:39:53.158 EEST [17020] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:39:53.158 EEST [17020] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:39:55.146 EEST [16376] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:39:55.146 EEST [16376] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:39:57.156 EEST [10696] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:39:57.156 EEST [10696] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:39:57.980 EEST [192] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:39:57.980 EEST [192] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:39:59.150 EEST [15920] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:39:59.150 EEST [15920] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:40:01.161 EEST [27860] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:40:01.161 EEST [27860] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:40:02.972 EEST [21868] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:40:02.972 EEST [21868] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:40:03.132 EEST [27204] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:40:03.132 EEST [27204] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:40:03.207 EEST [11648] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:40:03.207 EEST [11648] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:40:05.277 EEST [25584] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:40:05.277 EEST [25584] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:40:07.150 EEST [13540] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:40:07.150 EEST [13540] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:40:07.977 EEST [28564] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:40:07.977 EEST [28564] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:40:09.153 EEST [9972] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:40:09.153 EEST [9972] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:40:11.147 EEST [20892] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:40:11.147 EEST [20892] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:40:11.556 EEST [7480] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:40:11.556 EEST [7480] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:40:12.984 EEST [26748] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:40:12.984 EEST [26748] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:40:13.155 EEST [15868] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:40:13.155 EEST [15868] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:40:15.156 EEST [18832] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:40:15.156 EEST [18832] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:40:17.156 EEST [18928] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:40:17.156 EEST [18928] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:40:17.984 EEST [10252] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:40:17.984 EEST [10252] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:40:19.145 EEST [23864] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:40:19.145 EEST [23864] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:40:21.155 EEST [25356] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:40:21.155 EEST [25356] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:40:22.986 EEST [18260] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:40:22.986 EEST [18260] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:40:23.159 EEST [15324] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:40:23.159 EEST [15324] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:40:25.152 EEST [11868] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:40:25.152 EEST [11868] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:40:27.151 EEST [6032] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:40:27.151 EEST [6032] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:40:27.977 EEST [28528] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:40:27.977 EEST [28528] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:40:29.154 EEST [1100] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:40:29.154 EEST [1100] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:40:31.157 EEST [15008] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:40:31.157 EEST [15008] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:40:32.978 EEST [16988] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:40:32.978 EEST [16988] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:40:33.151 EEST [10964] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:40:33.151 EEST [10964] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:40:35.155 EEST [23248] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:40:35.155 EEST [23248] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:40:37.150 EEST [16284] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:40:37.150 EEST [16284] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:40:37.979 EEST [16068] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:40:37.979 EEST [16068] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:40:39.157 EEST [26512] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:40:39.157 EEST [26512] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:40:41.156 EEST [19796] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:40:41.156 EEST [19796] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:40:42.988 EEST [13592] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:40:42.988 EEST [13592] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:40:43.149 EEST [7452] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:40:43.149 EEST [7452] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:40:45.915 EEST [7840] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:40:45.915 EEST [7840] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:40:45.945 EEST [9556] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2023-10-10 11:41:03.926 EEST [14200] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:41:03.926 EEST [14200] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:41:14.468 EEST [28604] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:41:14.468 EEST [28604] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:43:33.976 EEST [11796] FATAL:  password authentication failed for user "retrox_owner"
+2023-10-10 11:43:33.976 EEST [11796] DETAIL:  Role "retrox_owner" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:43:49.388 EEST [18452] FATAL:  password authentication failed for user "retrox_admin"
+2023-10-10 11:43:49.388 EEST [18452] DETAIL:  Role "retrox_admin" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:44:01.734 EEST [9720] FATAL:  password authentication failed for user "postgre"
+2023-10-10 11:44:01.734 EEST [9720] DETAIL:  Role "postgre" does not exist.
+	Connection matched file "D:/Instalate/PostgreSQL/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2023-10-10 11:49:12.089 EEST [6240] LOG:  checkpoint starting: time
+2023-10-10 11:49:12.104 EEST [6240] LOG:  checkpoint complete: wrote 1 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.001 s, sync=0.002 s, total=0.016 s; sync files=1, longest=0.002 s, average=0.002 s; distance=0 kB, estimate=3344 kB; lsn=0/1EE6FF8, redo lsn=0/1EE6FC0
+2023-10-10 11:54:12.113 EEST [6240] LOG:  checkpoint starting: time
+2023-10-10 11:54:12.243 EEST [6240] LOG:  checkpoint complete: wrote 2 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.113 s, sync=0.003 s, total=0.130 s; sync files=2, longest=0.002 s, average=0.002 s; distance=5 kB, estimate=3010 kB; lsn=0/1EE8740, redo lsn=0/1EE8708
+2023-10-10 12:04:23.097 EEST [26164] ERROR:  column u1_0.username does not exist at character 8
+2023-10-10 12:04:23.097 EEST [26164] STATEMENT:  select u1_0.username,u1_0.age,u1_0.description,u1_0.name,u1_0.surname from user u1_0 where u1_0.username=$1
+2023-10-10 12:08:10.506 EEST [11404] ERROR:  column u1_0.username does not exist at character 8
+2023-10-10 12:08:10.506 EEST [11404] STATEMENT:  select u1_0.username,u1_0.age,u1_0.description,u1_0.name,u1_0.surname from user u1_0 where u1_0.username=$1
+2023-10-10 12:09:04.852 EEST [27116] ERROR:  column u1_0.username does not exist at character 8
+2023-10-10 12:09:04.852 EEST [27116] STATEMENT:  select u1_0.username,u1_0.age,u1_0.description,u1_0.name,u1_0.surname from user u1_0 where u1_0.username=$1
+2023-10-10 12:10:39.180 EEST [12660] ERROR:  column u1_0.username does not exist at character 8
+2023-10-10 12:10:39.180 EEST [12660] STATEMENT:  select u1_0.username,u1_0.age,u1_0.description,u1_0.name,u1_0.surname from user u1_0 where u1_0.username=$1
+2023-10-10 12:23:41.822 EEST [19704] ERROR:  column u1_0.username does not exist at character 8
+2023-10-10 12:23:41.822 EEST [19704] STATEMENT:  select u1_0.username,u1_0.age,u1_0.description,u1_0.name,u1_0.surname from user u1_0 where u1_0.username=$1
+2023-10-10 12:30:05.518 EEST [18604] ERROR:  column u1_0.username does not exist at character 8
+2023-10-10 12:30:05.518 EEST [18604] STATEMENT:  select u1_0.username,u1_0.age,u1_0.description,u1_0.name,u1_0.surname from user u1_0 where u1_0.username=$1
+2023-10-10 12:33:45.000 EEST [23100] ERROR:  syntax error at or near "USER" at character 37
+2023-10-10 12:33:45.000 EEST [23100] STATEMENT:  ALTER TABLE public."USER" RENAME TO USER;
+2023-10-10 12:34:12.352 EEST [6240] LOG:  checkpoint starting: time
+2023-10-10 12:34:12.466 EEST [6240] LOG:  checkpoint complete: wrote 1 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.102 s, sync=0.002 s, total=0.114 s; sync files=1, longest=0.002 s, average=0.002 s; distance=6 kB, estimate=2709 kB; lsn=0/1EE9F80, redo lsn=0/1EE9F48
+2023-10-10 12:34:26.288 EEST [23100] ERROR:  syntax error at or near "user" at character 37
+2023-10-10 12:34:26.288 EEST [23100] STATEMENT:  ALTER TABLE public."USER" RENAME TO user;
+2023-10-10 12:34:27.575 EEST [23100] ERROR:  syntax error at or near "user" at character 37
+2023-10-10 12:34:27.575 EEST [23100] STATEMENT:  ALTER TABLE public."USER" RENAME TO user;
+2023-10-10 12:34:28.308 EEST [23100] ERROR:  syntax error at or near "user" at character 37
+2023-10-10 12:34:28.308 EEST [23100] STATEMENT:  ALTER TABLE public."USER" RENAME TO user;
+2023-10-10 12:34:29.017 EEST [23100] ERROR:  syntax error at or near "user" at character 37
+2023-10-10 12:34:29.017 EEST [23100] STATEMENT:  ALTER TABLE public."USER" RENAME TO user;
+2023-10-10 12:36:22.381 EEST [28164] ERROR:  column u1_0.username does not exist at character 8
+2023-10-10 12:36:22.381 EEST [28164] STATEMENT:  select u1_0.username,u1_0.age,u1_0.description,u1_0.name,u1_0.surname from users u1_0 where u1_0.username=$1
+2023-10-10 12:36:55.838 EEST [28164] ERROR:  column u1_0.username does not exist at character 8
+2023-10-10 12:36:55.838 EEST [28164] STATEMENT:  select u1_0.username,u1_0.age,u1_0.description,u1_0.name,u1_0.surname from users u1_0 where u1_0.username=$1
+2023-10-10 12:39:12.474 EEST [6240] LOG:  checkpoint starting: time
+2023-10-10 12:39:13.367 EEST [6240] LOG:  checkpoint complete: wrote 9 buffers (0.1%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.871 s, sync=0.014 s, total=0.893 s; sync files=8, longest=0.007 s, average=0.002 s; distance=38 kB, estimate=2442 kB; lsn=0/1EF3A88, redo lsn=0/1EF3A50
+2023-10-10 12:40:22.675 EEST [17216] ERROR:  column "username" does not exist at character 27
+2023-10-10 12:40:22.675 EEST [17216] STATEMENT:  select * from users where USERNAME=$1
+2023-10-10 12:44:12.372 EEST [6240] LOG:  checkpoint starting: time
+2023-10-10 12:44:16.467 EEST [6240] LOG:  checkpoint complete: wrote 38 buffers (0.2%); 0 WAL file(s) added, 0 removed, 0 recycled; write=4.052 s, sync=0.028 s, total=4.096 s; sync files=30, longest=0.002 s, average=0.001 s; distance=171 kB, estimate=2215 kB; lsn=0/1F1E708, redo lsn=0/1F1E698
+2023-10-10 12:49:12.485 EEST [6240] LOG:  checkpoint starting: time
+2023-10-10 12:49:12.945 EEST [6240] LOG:  checkpoint complete: wrote 5 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.438 s, sync=0.006 s, total=0.460 s; sync files=4, longest=0.002 s, average=0.002 s; distance=0 kB, estimate=1994 kB; lsn=0/1F1EA70, redo lsn=0/1F1EA38
+2023-10-10 12:51:11.748 EEST [28424] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2023-10-10 12:51:11.748 EEST [26072] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2023-10-10 12:51:11.749 EEST [23100] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2023-10-10 12:51:11.749 EEST [10140] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2023-10-10 12:51:11.749 EEST [24160] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2023-10-10 12:51:11.749 EEST [26176] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2023-10-10 12:51:11.749 EEST [27040] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2023-10-10 12:51:11.749 EEST [20912] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2023-10-10 12:51:11.749 EEST [25016] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2023-10-10 12:51:11.751 EEST [21184] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2023-10-10 12:51:13.115 EEST [19012] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2023-10-10 12:54:12.954 EEST [6240] LOG:  checkpoint starting: time
+2023-10-10 12:54:13.069 EEST [6240] LOG:  checkpoint complete: wrote 2 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.106 s, sync=0.003 s, total=0.116 s; sync files=2, longest=0.002 s, average=0.002 s; distance=0 kB, estimate=1794 kB; lsn=0/1F1ECC8, redo lsn=0/1F1EC90
+2023-10-10 12:54:36.765 EEST [13776] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2023-10-10 12:54:36.765 EEST [12628] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2023-10-10 12:54:36.765 EEST [26096] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2023-10-10 12:54:36.789 EEST [25028] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
