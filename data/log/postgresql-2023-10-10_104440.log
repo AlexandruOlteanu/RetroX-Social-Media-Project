@@ -1355,3 +1355,13 @@
 	
 2023-10-10 12:54:36.789 EEST [25028] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
 	
+2023-10-10 12:59:12.087 EEST [6240] LOG:  checkpoint starting: time
+2023-10-10 12:59:12.325 EEST [6240] LOG:  checkpoint complete: wrote 3 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.221 s, sync=0.004 s, total=0.238 s; sync files=3, longest=0.002 s, average=0.002 s; distance=1 kB, estimate=1615 kB; lsn=0/1F1F0E0, redo lsn=0/1F1F0A8
+2023-10-10 12:59:35.926 EEST [17964] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2023-10-10 12:59:35.927 EEST [17264] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2023-10-10 12:59:35.927 EEST [25208] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2023-10-10 12:59:35.958 EEST [19728] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
