@@ -1,0 +1,34 @@
+2023-10-11 00:14:13.331 EEST [6240] LOG:  checkpoint starting: time
+2023-10-11 00:14:13.579 EEST [6240] LOG:  checkpoint complete: wrote 3 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.224 s, sync=0.011 s, total=0.249 s; sync files=3, longest=0.008 s, average=0.004 s; distance=1 kB, estimate=1308 kB; lsn=0/1F1F910, redo lsn=0/1F1F8D8
+2023-10-11 00:30:26.157 EEST [18228] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2023-10-11 00:30:26.157 EEST [13952] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2023-10-11 00:30:26.157 EEST [17936] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2023-10-11 00:30:26.157 EEST [5460] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2023-10-11 00:30:26.157 EEST [11080] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2023-10-11 18:14:26.121 EEST [6240] LOG:  checkpoint starting: immediate force wait
+2023-10-11 18:14:26.138 EEST [6240] LOG:  checkpoint complete: wrote 4 buffers (0.0%); 0 WAL file(s) added, 0 removed, 1 recycled; write=0.004 s, sync=0.004 s, total=0.017 s; sync files=4, longest=0.002 s, average=0.001 s; distance=4551 kB, estimate=4551 kB; lsn=0/2391688, redo lsn=0/2391650
+2023-10-11 18:19:26.144 EEST [6240] LOG:  checkpoint starting: time
+2023-10-11 18:21:12.783 EEST [6240] LOG:  checkpoint complete: wrote 972 buffers (5.9%); 0 WAL file(s) added, 0 removed, 0 recycled; write=106.397 s, sync=0.231 s, total=106.640 s; sync files=304, longest=0.007 s, average=0.001 s; distance=4565 kB, estimate=4565 kB; lsn=0/2806C70, redo lsn=0/2806AF0
+2023-10-11 18:23:06.027 EEST [13852] ERROR:  database "MyDb" is being accessed by other users
+2023-10-11 18:23:06.027 EEST [13852] DETAIL:  There are 5 other sessions using the database.
+2023-10-11 18:23:06.027 EEST [13852] STATEMENT:  DROP DATABASE IF EXISTS "MyDb";
+	
+2023-10-11 18:23:15.436 EEST [13852] ERROR:  database "MyDb" is being accessed by other users
+2023-10-11 18:23:15.436 EEST [13852] DETAIL:  There are 5 other sessions using the database.
+2023-10-11 18:23:15.436 EEST [13852] STATEMENT:  DROP DATABASE IF EXISTS "MyDb";
+	
+2023-10-11 18:23:20.865 EEST [13852] ERROR:  database "MyDb" is being accessed by other users
+2023-10-11 18:23:20.865 EEST [13852] DETAIL:  There are 5 other sessions using the database.
+2023-10-11 18:23:20.865 EEST [13852] STATEMENT:  DROP DATABASE IF EXISTS "MyDb";
+	
+2023-10-11 18:23:45.581 EEST [6240] LOG:  checkpoint starting: immediate force wait
+2023-10-11 18:23:45.592 EEST [6240] LOG:  checkpoint complete: wrote 2 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.002 s, sync=0.002 s, total=0.011 s; sync files=2, longest=0.001 s, average=0.001 s; distance=2 kB, estimate=4108 kB; lsn=0/2807380, redo lsn=0/2807348
+2023-10-11 18:28:45.606 EEST [6240] LOG:  checkpoint starting: time
+2023-10-11 18:28:45.736 EEST [6240] LOG:  checkpoint complete: wrote 2 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.113 s, sync=0.003 s, total=0.130 s; sync files=2, longest=0.002 s, average=0.002 s; distance=0 kB, estimate=3698 kB; lsn=0/2807530, redo lsn=0/28074F8
+2023-10-11 19:03:45.780 EEST [6240] LOG:  checkpoint starting: time
+2023-10-11 19:03:46.023 EEST [6240] LOG:  checkpoint complete: wrote 3 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.221 s, sync=0.010 s, total=0.244 s; sync files=3, longest=0.008 s, average=0.004 s; distance=1 kB, estimate=3328 kB; lsn=0/2807A40, redo lsn=0/2807A08
