@@ -1,6 +1,7 @@
 package com.retrox.api;
 
 import com.retrox.api.domain.request.LoginRequest;
+import com.retrox.api.domain.request.PostRequest;
 import com.retrox.api.domain.request.RegisterRequest;
 import com.retrox.api.domain.response.LoginResponse;
 import jakarta.validation.Valid;
@@ -19,10 +20,15 @@ public interface RetroXService {
     String BASE_URL = "/api/retrox/";
     String LOGIN = "login";
     String REGISTER = "register";
+    String POST = "post";
+
     @PostMapping(value = BASE_URL + LOGIN, consumes = MEDIA_TYPE_APPLICATION_JSON, produces = MEDIA_TYPE_APPLICATION_JSON)
     ResponseEntity<LoginResponse> login(@Valid @RequestBody LoginRequest request);
 
     @PutMapping(value = BASE_URL + REGISTER, consumes = MEDIA_TYPE_APPLICATION_JSON)
     void register(@Valid @RequestBody RegisterRequest request);
+
+    @PutMapping(value = BASE_URL + POST, consumes = MEDIA_TYPE_APPLICATION_JSON)
+    void post(@Valid @RequestBody PostRequest request);
 
 }

@@ -1,10 +1,9 @@
 package com.retrox.service.domain;
 
-import jakarta.persistence.Column;
-import jakarta.persistence.Entity;
-import jakarta.persistence.Id;
-import jakarta.persistence.Table;
+import jakarta.persistence.*;
 import lombok.Data;
+
+import java.util.List;
 
 @Data
 @Entity
@@ -17,6 +16,8 @@ public class User {
     @Id
     @Column(name = "USERNAME")
     private String username;
+    @OneToMany(mappedBy = "user", cascade = CascadeType.ALL)
+    private List<Post> posts;
     @Column(name = "AGE")
     private Integer age;
     @Column(name = "DESCRIPTION")
